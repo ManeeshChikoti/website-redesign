@@ -1,16 +1,20 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
 :root {
   --bs-primary: black;
   --bs-primary-rgb: 0, 0, 0;
   --bs-secondary: #00c09b;
   --bs-secondary-rgb: 0, 192, 155;
 }
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+.card-img-top{
+  height:250px;
 }
+
+
 
 .page-content {
   padding: 50px;
@@ -173,3 +177,153 @@ body {
     font-size: 24px;
   }
 }
+
+/* Common Style */
+.bg-color {
+  background-color: #000a08;
+}
+
+.schedule-btn {
+  padding: 5px 20px;
+  border: 2px solid #0db59b;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #0db59b;
+  font-size: 18px;
+}
+
+.text-color {
+  color: #0db59b;
+}
+
+
+
+
+
+/* Navbar Style */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0px 20px;
+  font-weight: 300;
+}
+
+.schedule-btn {
+  padding: 10px 40px;
+  border: 2px solid #0db59b;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #0db59b;
+  font-size: 18px;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+/* Home Style */
+#home-section {
+  background-image: url("./assets/images/home_bg_image.png");
+  background-color: #000a08 !important;
+}
+
+.title span {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: #0db59b;
+}
+
+.home-subtitle {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.home-map {
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: white;
+  opacity: 30%;
+}
+
+#scrolling-section p {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+#scrolling-section p span {
+  font-size: 30px;
+}
+
+.scrolling-inner {
+  white-space: nowrap;
+}
+
+.scrolling-item {
+  padding: 0px 100px;
+}
+
+.scrolling-inner > div {
+  animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+.scrolling-container:hover .scrolling-inner > div {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.planner-next {
+  background-color: rgba(13, 181, 155, 0.168627451);
+  width: 100px;
+}
+
+
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+/* Small devices (landscape phones, 576px and down) */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navbar {
+    padding: 20px 50px;
+  }
+  
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar {
+    min-height: 100px;
+    padding: 30px 50px;
+  }
+  
+  
+}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .navbar {
+    padding: 30px 150px;
+  }
+ 
+}/*# sourceMappingURL=style.css.map */
